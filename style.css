@@ -1,0 +1,129 @@
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111B40;
+}
+
+main{
+  background-color: #112A40;
+  width: 300px;
+  height: 500px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.message{
+  color: black;
+  width: 25%;
+  height: 20px;
+  font-size: .5em;
+  align-self: end;
+  margin: 10px 25px 5px 0px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px 10px 10px 0px;
+  opacity: 0;
+}
+
+.message.initial-anim{
+  transition-duration: .5s;
+  opacity: 1;
+}
+
+.message.closed-anim{
+  transition-duration: .5s;
+  opacity: 0;
+}
+
+.box-create-task{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  gap: 5px;
+}
+
+#create-task{
+  background-color: #2D5273;
+  border: none;
+  border-radius: 10px;
+  height: 35px;
+  padding-left: 5px;
+  color: white;
+}
+
+.add-new-task{
+  background-color: #2D5273;
+  border: none;
+  border-radius: 10px;
+  width: 40px;
+  height: 35px;
+  color: white;
+}
+
+.area-task{
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+
+.task{
+  width: 75%;
+  height: 40px;
+  background-color: #2D5273;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: .8em;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+label{
+  width: 50%;
+}
+p{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  white-space: nowrap;
+  overflow: auto;
+}
+
+.task-completed{
+  text-decoration: line-through;
+  color: gray;
+}
+.input-edit{
+  display: block;
+  width: 90%;
+  color: white;
+}
+.buttons{
+  display: inline-flex;
+  justify-content: center;
+  width: 30px;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  margin: 5px;
+  font-variation-settings:
+  'FILL' 00,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 20
+}
+
